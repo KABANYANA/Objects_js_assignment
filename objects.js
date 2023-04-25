@@ -42,7 +42,7 @@ console.log(older())
 const groupByCategory = (products) => {
     const groupedProducts = {};
     
-    // Loop through each product in the products array
+    
     products.forEach(product => {
       const { name, price, category } = product;
       if (!groupedProducts.hasOwnProperty(category)) {
@@ -77,7 +77,7 @@ const groupByCategory = (products) => {
 //   { name: 'Jill', scores: [85, 90, 84] },
 // ];
 
-const getNamesOfHighScoringStudents = (students) => {
+const HigherScoringStudents = (students) => {
     const highScoringStudents = [];
   
     
@@ -103,7 +103,7 @@ const getNamesOfHighScoringStudents = (students) => {
     { name: 'Jill', scores: [85, 90, 84] },
   ];
   
-  const highScoringStudents = getNamesOfHighScoringStudents(students);
+  const highScoringStudents = HigherScoringStudents(students);
   console.log(highScoringStudents);
   
 
@@ -124,7 +124,7 @@ const getNamesOfHighScoringStudents = (students) => {
 
 
 
-  const addAgeMethodToCar = (car) => {
+  const aMethodToCar = (car) => {
     
     const currentYear = new Date().getFullYear();
   
@@ -144,7 +144,7 @@ const getNamesOfHighScoringStudents = (students) => {
   };
   
  
-  addAgeMethodToCar(car);
+  aMethodToCar(car);
   
  
   console.log(car.age()); 
